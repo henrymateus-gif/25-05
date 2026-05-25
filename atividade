@@ -1,0 +1,16 @@
+venda = [250, 330, 440, 540, 350, 250, 368, 40, 250, 30, 30]
+vendedores = ['maria', 'mara', 'joão', 'silva', 'santos', 'mario', 'carlos', 'marly', 'xuxa', 'chica', 'zinha']
+
+meta = 50
+
+# Inicializa o índice em zero
+i = 0
+
+# O loop vai rodar enquanto o índice for menor que o tamanho da lista de vendedores
+while i < len(vendedores):
+    # Verifica se a venda do vendedor atual é maior ou igual à meta
+    if venda[i] >= meta:
+        print(vendedores[i])
+    
+    # IMPORTANTE: Incrementa o índice para não criar um loop infinito
+    i += 1
